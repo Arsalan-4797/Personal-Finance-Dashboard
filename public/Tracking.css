@@ -1,0 +1,109 @@
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #F7F9FC;
+        }
+
+        .hero {
+            background: linear-gradient(to bottom, #4567b7, #6495ed);
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .navbar {
+            background-color: #fff;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .nav-link {
+            font-size: 16px;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #337ab7;
+        }
+
+        .nav-link.active {
+            color: #337ab7;
+            font-weight: bold;
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .expense-summary {
+            margin-bottom: 20px;
+        }
+
+        .expense-filter {
+            margin-bottom: 20px;
+        }
+
+        .add-expense {
+            margin-bottom: 20px;
+        }
+
+        .expense-list {
+            margin-bottom: 20px;
+        }
+
+        .table {
+            margin-bottom: 20px;
+        }
+
+        .table th,
+        .table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .table th {
+            background-color: #f7f7f7;
+        }
+
+        #expense {
+            background-color: #337ab7;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        #expense:hover {
+            background-color: #23527c;
+        }
+
+        #filterbtn {
+            background-color: #337ab7;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        #filterbt:hover {
+            background-color: #23527c;
+        }

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income</title>
+    <link rel="stylesheet" href="Income.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="hero">
+        <h1>Track Your Income</h1>
+        <p>Get Insights and Visual Summaries of your Income.</p>
+    </div>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="Images/fintrack.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                FinTrack
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="dashboard.html"><i
+                            class="fas fa-chart-line"></i> Financial Dashboard</a>
+                    <a class="nav-link" href="TrackingSystem.html"><i class="fas fa-file-invoice-dollar"></i> Tracking
+                        System</a>
+                    <a class="nav-link" href="Budgets.html"><i class="fas fa-piggy-bank"></i> Budget</a>
+                    <a class="nav-link" href="Reports.html"><i class="fas fa-file-alt"></i> Reports</a>
+                    <a class="nav-link" href="Income.html"><i class="fa-solid fa-credit-card"></i> Income</a>
+                    <a class="nav-link" href="Setting.html"><i class="fa-solid fa-gear"></i> Settings</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="card" id="Cards">
+        <h3>Add Income</h3>
+        <form id="IncomeForm">
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="incomeamount">Income Amount</label>
+                    <input type="number" id="incomeamount" class="form-control" placeholder="Enter your income amount"
+                        required>
+                </div>
+                <div class="col-md-4">
+                    <label for="incomedate">Income Date</label>
+                    <input type="date" id="incomedate" class="form-control" placeholder="Enter Your Income date"
+                        required>
+                </div>
+                <div class="col-md-4">
+                    <label for="incomesource">Source/Category</label>
+                    <input type="text" id="incomesource" class="form-control" placeholder="Enter Your Source Income"
+                        required>
+                </div>
+            </div>
+            <div class="col-md-12 mt-3">
+                <button type="submit" class="btn col-md-3" id="income">Add Income</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="card">
+        <h3>Income Summary Section</h3>
+        <p><strong>Total Income:</strong> <span id="totalincome">0</span></p>
+        <p><strong>Monthly Breakdown:</strong></p>
+        <div class="chart-container">
+            <canvas id="Incomesummarysection"></canvas>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Income Vs Expenses</h3>
+        <div class="chart-container">
+            <canvas id="IncomeExpenseSection"></canvas>
+        </div>
+    </div>
+
+    <script src="Income.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
